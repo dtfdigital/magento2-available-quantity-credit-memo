@@ -1,7 +1,0 @@
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
- <type name="Magento\Catalog\Model\Indexer\Category\Product\Action\Full">
-        <arguments>
-            <argument name="batchRowsCount" xsi:type="number">500</argument>
-        </arguments>
-    </type>
-</config>
