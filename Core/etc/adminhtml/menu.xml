@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dtfdigital_Core::dtfdigital" title="DTF Digital" module="Dtfdigital_Core" sortOrder="50" resource="Dtfdigital_Core::dtfdigital"/>
+		<add id="Dtfdigital_Core::installedextensions" title="Installed Extensions" module="Dtfdigital_Core" sortOrder="10" action="dtfdigital/installedextensions" resource="Dtfdigital_Core::installedextensions" parent="Dtfdigital_Core::dtfdigital"/>
+		<add id="Dtfdigital_Core::support" title="Support" module="Dtfdigital_Core" sortOrder="10" action="dtfdigital/support" resource="Dtfdigital_Core::support" parent="Dtfdigital_Core::dtfdigital"/>
+		
+		
+	<!--	<add id="Dtfdigital_Core::dtfdigital_availableextensions" title="Available Extensions" module="Dtfdigital_Core" sortOrder="10" action="dtfdigital/availableextensions" resource="Dtfdigital_Core::availableextensions" parent="Dtfdigital_Core::dtfdigital"/>-->
+    </menu>
+</config>

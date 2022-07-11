@@ -1,0 +1,15 @@
+<p>Your installed <a href="https://dtf.digital"><strong>DTF Digital</strong></a> extensions are listed below. Please use this data for reference when contacting DTF Digital support.</p>
+<?php 
+
+$installedExtensions = $block->getInstalledExtensions(); 
+if(sizeof($installedExtensions) > 0) {
+?><table id="dtfTable" cellspacing="0" cellpadding="0" width="100%"><thead><tr><th width="500">Extension Name</th><th width="300">Schema Version</th><th width="300">Data Version</th></tr></thead><tbody><?php
+foreach($installedExtensions as $_extension) {
+	
+	//var_dump($_extension->getData());
+	?><tr><td><?php echo $_extension->getModule(); ?></td><td><?php echo $_extension->getSchemaVersion();?></td><td><?php echo $_extension->getDataVersion();?></td></tr><?php
+	
+}
+	?></tbody></table>	<?php 
+	}
+?>

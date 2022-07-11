@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_creditmemo_save_after"><!-- sales_order_save_after -->
+        <observer name="dtfdigital_returntostock_beforethree" instance="Dtfdigital\Returntostock\Observer\StockObserver" />
+    </event>
+	<!--<event name="adminhtml_sales_order_creditmemo_register_before">
+        <observer name="dtfdigital_returntostock_beforetwo" instance="Dtfdigital\Returntostock\Observer\StockObserver" />
+    </event>-->
+</config>
