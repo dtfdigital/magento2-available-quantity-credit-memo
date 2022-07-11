@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+   <acl>
+       <resources>
+           <resource id="Magento_Backend::admin">
+               <resource id="Dtfdigital_Core::dtfdigital" title="DTF Digital" sortOrder="50">
+                   <resource id="Dtfdigital_Core::installedextensions" title="DTF Digital - Installed Extensions" sortOrder="10"/>
+				   <resource id="Dtfdigital_Core::availableextensions" title="DTF Digital - Available Extensions" sortOrder="11"/>
+				   <resource id="Dtfdigital_Core::support" title="DTF Digital - Available Extensions" sortOrder="12"/>
+               </resource>
+           </resource>
+       </resources>
+   </acl>
+</config>
